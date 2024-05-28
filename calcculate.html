@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculate</title>
+    <link rel="stylesheet" href="./dist/output.css">
+     <!-- Primary Meta Tags -->
+<title>Currency exchange converter</title>
+<meta name="title" content="Currency exchange converter" />
+<meta name="description" content="လူကြီးမင်းတို့ရဲ့ ကိန်းဏဂန်းဆိုင်ရာတွက်ချက်မှုများကိုမှန်ကန်စွာတွက်ချက်နုိင်ရန် ကျွန်တောာ်တို့ရဲ့ ဝက်ဆုိဒ်ကိုလာရောက်ကြည့်ရှုနိုင်ပါသည်။" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://metatags.io/" />
+<meta property="og:title" content="Currency exchange converter" />
+<meta property="og:description" content="လူကြီးမင်းတို့ရဲ့ ကိန်းဏဂန်းဆိုင်ရာတွက်ချက်မှုများကိုမှန်ကန်စွာတွက်ချက်နုိင်ရန် ကျွန်တောာ်တို့ရဲ့ ဝက်ဆုိဒ်ကိုလာရောက်ကြည့်ရှုနိုင်ပါသည်။" />
+<meta property="og:image" content="./img/mortgage-calculator-min.webp " />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://metatags.io/" />
+<meta property="twitter:title" content="Currency exchange converter" />
+<meta property="twitter:description" content="လူကြီးမင်းတို့ရဲ့ ကိန်းဏဂန်းဆိုင်ရာတွက်ချက်မှုများကိုမှန်ကန်စွာတွက်ချက်နုိင်ရန် ကျွန်တောာ်တို့ရဲ့ ဝက်ဆုိဒ်ကိုလာရောက်ကြည့်ရှုနိုင်ပါသည်။" />
+<meta property="twitter:image" content="./img/mortgage-calculator-min.webp " />
+
+<!-- Meta Tags Generated with https://metatags.io -->
+</head>
+
+<body class="bg-green-700">
+    <h1 class="text-center my-9">My Calculator</h1>
+
+    <div id="container"
+        class="grid grid-cols-4 w-72 m-auto bg-fuchsia-700 rounded-2xl shadow-2xl shadow-black my-5 p-2 ">
+
+        <input class="text-center font-bold col-span-4 w-64 mx-auto h-11 my-2 bg-fuchsia-400" id="output" type="text">
+
+        <button class="btn 
+             " value="" id="c" onclick="Clean()">C</button>
+        <button class="btn" value="*" id="into" onclick="Into()">*</button>
+        <button class="btn" value="/" id="dev" onclick="Dev()">/</button>
+        <button class="btn flex justify-center" value="eraser" id="eraser" onclick="Eraser()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="25 " fill="black" viewbox="70 10 90 256">
+                <path
+                    d="M216,40H68.53a16.08,16.08,0,0,0-13.72,7.77L9.14,123.88a8,8,0,0,0,0,8.24l45.67,76.11A16.08,16.08,0,0,0,68.53,216H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM61.67,204.12,68.53,200h0ZM216,200H68.53l-43.2-72,43.2-72H216ZM106.34,146.34,124.69,128l-18.35-18.34a8,8,0,0,1,11.32-11.32L136,116.69l18.34-18.35a8,8,0,0,1,11.32,11.32L147.31,128l18.35,18.34a8,8,0,0,1-11.32,11.32L136,139.31l-18.34,18.35a8,8,0,0,1-11.32-11.32Z" />
+            </svg>
+        </button>
+        <button class="btn" value="7" onclick="addNumber(seven)" id="seven">7</button>
+        <button class="btn" value="8" onclick="addNumber(eight)" id="eight">8</button>
+        <button class="btn" value="9" onclick="addNumber(nine)" id="nine">9</button>
+        <button class="btn" value="-" onclick="Minus()" id="minus">-</button>
+        <button class="btn" value="4" onclick="addNumber(four)" id="four">4</button>
+        <button class="btn" value="5" onclick="addNumber(five)" id="five">5</button>
+        <button class="btn" value="6" onclick="addNumber(six)" id="six">6</button>
+        <button class="btn" value="+" onclick="Plus()" id="plus">+</button>
+        <button class="btn" value="1" onclick="addNumber(one)" id="one">1</button>
+        <button class="btn" value="2" onclick="addNumber(two)" id="two">2</button>
+        <button class="btn" value="3" onclick="addNumber(three)" id="three">3</button>
+        <button class="btn row-span-2" value="=" onclick="calc()" id="equal">=</button>
+        <button class="btn" value="%" onclick="addNumber(percen)" id="percen">%</button>
+        <button class="btn" value="0" onclick="addNumber(zero)" id="zero">0</button>
+        <button class="btn" value="." onclick="addNumber(dot)" id="dot">.</button>
+
+
+    </div>
+
+    </div>
+
+    <script src="./Js/calculate.js"></script>
+</body>
+
+</html>
